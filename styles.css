@@ -32,7 +32,7 @@ a {
     
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
     .ref3 {
         top: 530vh;
     }
@@ -102,7 +102,7 @@ header {
 	width: 100%; 
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
     header {
         display: block;
         text-align: center;
@@ -200,7 +200,7 @@ header {
     margin-right: 50px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
     .main h1 {
         font-size: 17vw;
         margin-left: 5px;
@@ -275,7 +275,7 @@ header {
     padding-right: 20px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
     .why .best1 .subbest1, .why .best2 .subbest2 {
         float: none;
         display: block;
@@ -352,7 +352,7 @@ header {
     padding-bottom: 20px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
     .service div {
         float: none;
         display: block;
@@ -407,7 +407,7 @@ header {
     color: rgb(34, 34, 34, 0.5);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
     .page {
         display: block;
     }
@@ -448,7 +448,7 @@ header {
     color: rgb(34, 34, 34, 0.5);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1000) {
     .work p {
         margin-left: 5px;
         margin-right: 5px;
@@ -562,7 +562,7 @@ footer a {
 	width: 100%;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 1000px) {
     footer {
         display: block;
     }
