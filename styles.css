@@ -1,0 +1,586 @@
+body {
+    margin: 0%;
+    border: 0%;
+    padding: 0%;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.ref {
+    position: absolute;
+    top: 0;
+}
+
+.ref2 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    position: absolute;
+    top: 100vh;
+}
+
+.ref3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin: 0;
+    position: absolute;
+    top: 280vh;
+    
+}
+
+@media (max-width: 750px) {
+    .ref3 {
+        top: 530vh;
+    }
+}
+
+header {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 2px 10px rgb(34, 34, 34);
+    z-index: 100;
+}
+
+.logo a {
+    color: rgb(34, 34, 34);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: 100px;
+    margin-bottom: 0px;
+    height: 50px;
+    font-family: none;
+}
+
+.top {
+    width: 500px;
+    position: absolute;
+    right: 0;
+    top: 35px;
+}
+
+.top a {
+    position: relative;
+    display: inline-block;
+    margin-right: 100px;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bold;
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+}
+
+.top a:last-child {
+    margin-right: 0px;
+}
+
+.top a:after {
+	display: block;
+    content: "";
+    background-color: rgb(34, 34, 34);
+    height: 2px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+ 
+}
+
+.top a:hover:after,
+.top a:focus:after {
+	width: 100%; 
+}
+
+@media (max-width: 750px) {
+    header {
+        display: block;
+        text-align: center;
+        height: 80px;
+    }
+
+    .logo a {
+        margin: 20px;
+        margin-top: 0px;
+        text-align: center;
+    }
+
+    .top {
+        display: block;
+        top: 100px;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .top a {
+        margin: 15px;
+    }
+}
+
+.first {
+    background: url(img/bed.jpg) center/cover fixed;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    margin: 0; 
+    height: 100vh;
+    width: 100%; 
+    filter: blur(4px);
+    box-shadow: 0px 0px 15px rgb(199, 158, 135);
+    z-index: -1;
+}
+
+.main {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+    z-index: 10;
+}
+
+.main h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 13vw;
+    margin-top: 20px;
+    letter-spacing: 0.2em;
+}
+
+.main h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    font-size: 4vw;
+    letter-spacing: 0.5em;
+    word-spacing: 1em;
+}
+
+.about {
+    height:100vh;
+    background-color: rgb(199, 158, 135);
+    display: table;
+    font-size: 25px;
+    color: white;
+    box-shadow: 0px -20px 15px rgb(34, 34, 34);
+    z-index: 1;
+}
+
+.flex-img {
+    max-width: 600px;
+    float: left;
+}
+
+.about img{
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgb(34, 34, 34);
+    max-width: 100%;
+}
+
+.txt {
+    padding-top: 5vw;
+    margin-left: 680px;
+    margin-right: 50px;
+}
+
+@media (max-width: 750px) {
+    .main h1 {
+        font-size: 17vw;
+        margin-left: 5px;
+    }
+    
+    .main h2 {
+        font-size: 7vw;
+    }
+}
+
+@media (max-width: 1000px) {
+    .about {
+        display: block;
+        padding-top: 20px;
+        display: table;
+    }
+
+    .about .flex-img {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+        margin: 0;
+    }
+
+    .txt {
+        margin: 10px;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.why {
+    display: table;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(224, 211, 201);
+    padding-top: 10px;
+}
+
+.why h1 {
+    margin-top: 40px;
+    font-size: 30px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.why .best1, .why .best2 {
+    margin-top: 40px;
+    height: 200px;
+    width: 100%;
+}
+
+.why .best1 .subbest1, .why .best2 .subbest2 {
+    width: 33%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.why img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why p {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (max-width: 750px) {
+    .why .best1 .subbest1, .why .best2 .subbest2 {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 300px;
+    }
+
+    .why .best1, .why .best2 {
+        height: 900px;
+    }
+
+}
+
+.service {
+    display: table;
+    height: auto;
+    width: 100%;
+    background-color: #FFFADD;
+    padding-bottom: 15px;
+    padding-top: 40px;
+}
+
+.service h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.service > div {
+    margin-top: 40px;
+    height: 400px;
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 17px;
+}
+
+.service h2 {
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    border-color: rgb(34, 34, 34);
+    background-color: rgb(199, 158, 135);
+}
+
+.service h2:hover {
+    cursor: pointer;
+    border: rgb(34, 34, 34) 1px solid;
+}
+
+.cont-hide {display:none;}
+.cont-show {display:block;}
+
+.service div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.service table {
+    position: relative;
+    border-radius: 10px;
+    border: 1px;
+    border-style: solid;
+    border-color: rgb(34, 34, 34);
+    background-color: #FFFADD;
+    z-index: 5;
+}
+
+.service td {
+    padding-bottom: 20px;
+}
+
+@media (max-width: 750px) {
+    .service div {
+        float: none;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 20%;
+    }
+
+    .service div img {
+        width: 100%;
+    }
+}
+
+.alb {
+    text-align: center;
+}
+
+.albom {
+    display: flex;
+    justify-content: center;
+}
+
+.page {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+
+.page img {
+    max-width: 100%;
+}
+
+.continue {
+    display: flex;
+    justify-content: center;
+}
+
+.continue a {
+    color: rgb(34, 34, 34);
+    font-size: 24px;
+    border-bottom: rgb(255, 255, 255) 2px solid;
+    margin-top: 20px;
+}
+
+.continue a:hover {
+    border-bottom: rgb(34, 34, 34) 2px solid;
+}
+
+.continue a:active {
+    color: rgb(34, 34, 34, 0.5);
+}
+
+@media (max-width: 750px) {
+    .page {
+        display: block;
+    }
+}
+
+.work {
+    display: table;
+    background-color: white;
+    height: 70vh;
+    width: 100%;
+    margin: 0;
+    padding-top: 40px;
+    z-index: 0;
+}
+
+.work h1 {
+    text-align: center;
+    margin: 0%;
+}
+
+.work p {
+    font-size: 25px;
+    text-align: center;
+    margin: 30px;
+}
+
+.work p a {
+    color: rgb(34, 34, 34);
+    text-decoration: underline;
+}
+
+.work p a:hover {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.work p a:active {
+    color: rgb(34, 34, 34, 0.5);
+}
+
+@media (max-width: 700px) {
+    .work p {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    column-gap: 100px;
+}
+
+footer a {
+    color: white;
+    font-size: 20px;
+    border-bottom: rgb(34, 34, 34) 2px solid;
+}
+
+.contacts {
+    padding: 20px;
+}
+
+.contacts h3 {
+    padding-bottom: 20px;
+}
+
+.subcontacts {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    row-gap: 20px;
+}
+
+.log, .log0 {
+    font-family: none;
+    text-align: center;
+}
+
+.log {
+    text-decoration: none;
+    padding-top: 10px;
+}
+
+.log a {
+    font-size: 25px;
+}
+
+.log a:hover {
+    border: rgb(34, 34, 34);
+}
+
+.log0 {
+    background-color: rgb(34, 34, 34);
+    color: white;
+    display: none;
+    padding-top: 20px;
+    margin-bottom: 0;
+}
+.log0 a {
+    color: white;
+    font-size: 25px;
+    margin: 0;
+    text-decoration: none;
+}
+
+.addres {
+    padding: 20px;
+    text-align: end;
+}
+
+.maps {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+}
+
+.contacts a, .addres a {
+    position: relative;
+}
+
+.contacts a::after {
+    display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.contacts a:hover:after,
+.contacts a:focus:after {
+	width: 100%;
+}
+
+.addres a::after {
+    display: block;
+	position: absolute;
+	right: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: white; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out;
+}
+
+.addres a:hover:after,
+.addres a:focus:after {
+	width: 100%;
+}
+
+@media (max-width: 750px) {
+    footer {
+        display: block;
+    }
+
+    .log {
+        display: none;
+    }
+
+    .addres {
+        text-align: start;
+        margin-top: 50px;
+    }
+
+    .log0 {
+        display: block;
+    }
+
+    .addres a::after {
+        left: 0;
+    }
+}
