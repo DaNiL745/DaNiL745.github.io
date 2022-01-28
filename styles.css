@@ -116,9 +116,7 @@ header {
     }
 
     .top {
-        display: grid;
-        width: 700px;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: block;
         top: 100px;
         left: 50%;
         margin-right: -50%;
@@ -127,7 +125,6 @@ header {
 
     .top a {
         margin: 15px;
-        font-size: 60px;
     }
 }
 
